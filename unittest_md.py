@@ -16,7 +16,6 @@ atoms.calc = EMT()
 class MdTests(unittest.TestCase):
 
     def test_calcenergy(self):
-        self.assertTrue(True)
         epot, ekin, temp, etot = calcenergy(atoms) 
         self.assertEqual(etot, ekin+epot)
 
